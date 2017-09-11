@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 import time
+import os
+print(os.getcwd())
 from math import sqrt
 
 #RRT* parameters
@@ -23,7 +25,7 @@ PBT.connect(PBT.DIRECT)
 PBT.setGravity(0,0,-10)
 
 #Import ground plane
-PBT.loadURDF("plane.urdf", [12, 12, 0])
+PBT.loadURDF("/plane.urdf", [12, 12, 0])
 
 #Import obstacle boxes
 obsboxStartPos = [5, 2, 0.0]
